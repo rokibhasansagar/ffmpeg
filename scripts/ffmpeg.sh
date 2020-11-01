@@ -2,7 +2,7 @@
 
 
 # Download link for the latest ffmpeg version.
-url="http://ffmpeg.org/releases/ffmpeg-4.2.tar.bz2"
+url="http://ffmpeg.org/releases/ffmpeg-4.3.tar.bz2"
 # Finding out the name of the directory
 dirname=$(basename "$url" .tar.bz2)
 
@@ -22,15 +22,13 @@ cd "$dirname" || exit
         --toolchain=hardened \
         --enable-gpl \
         --enable-nonfree \
-	--enable-version3 \
+	      --enable-version3 \
         --disable-stripping \
-        --enable-avisynth \
         --enable-libass \
         --enable-libfontconfig \
         --enable-libfreetype \
        	--enable-libfribidi \
         --enable-libgme \
-	--enable-libvmaf \
         --enable-libgsm \
         --enable-librubberband \
         --enable-libshine \
@@ -60,13 +58,17 @@ cd "$dirname" || exit
         --enable-libx265 \
         --disable-ffplay \
         --enable-libopenjpeg \
-	--enable-libsrt \
         --enable-libwebp \
         --enable-libxvid \
         --enable-libvidstab \
         --enable-libopenh264 \
         --enable-zlib \
-        --enable-openssl
+        --enable-openssl \
+      	--enable-pic \
+	      --enable-libzimg \
+	      --enable-libvmaf
+	      # --enable-libsrt \
+        # --enable-avisynth \
 make -j$cpu_cnt
 sudo make install
 sudo make distclean
