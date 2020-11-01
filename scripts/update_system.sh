@@ -148,7 +148,22 @@ sudo apt install \
 	python-dev \
 	python-pip \
 	python-tk \
-	libssl-dev -y 
+	git-core \
+	libsdl1.2-dev \
+	libvdpau-dev \
+	libvorbis-dev \
+	libx11-dev \
+	libxext-dev \
+	libxfixes-dev \
+	texi2html \
+	gcc \
+	libogg-dev \
+	libxcb1-dev \
+	libx264-dev \
+	libx265-dev \
+	x265 \
+	libgpac-dev \
+	libssl-dev -y
 sudo apt clean -y 
 sudo apt autoremove -y 
 echo "End of the system update"
