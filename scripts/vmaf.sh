@@ -9,14 +9,14 @@ prerequisites() {
                 libhdf5-dev \
                 libfreetype6-dev \
                 liblapack-dev \
-                python \
+                python3 \
                 python-setuptools \
-                python-dev \
-                python-pip \
+                python3-dev \
+                python3-pip \
                 python-tk \
                 git 1> /dev/null
         sudo -H pip install --upgrade pip 1> /dev/null
-        pip install --user numpy scipy matplotlib notebook pandas sympy nose scikit-learn scikit-image h5py 1> /dev/null
+        pip3 install --user numpy scipy matplotlib notebook pandas sympy nose scikit-learn scikit-image h5py 1> /dev/null
         echo ""export PATH="$PATH:$HOME/.local/bin""" >> $HOME/.bashrc
         source "$HOME"/.bashrc
 }
