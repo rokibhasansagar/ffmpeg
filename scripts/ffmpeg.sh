@@ -61,12 +61,12 @@ cd "$dirname" || exit
         --enable-libwebp \
         --enable-libxvid \
         --enable-libvidstab \
-        --enable-libopenh264 \
         --enable-zlib \
         --enable-openssl \
       	--enable-pic \
-	      --enable-libzimg \
-	      --enable-libvmaf
+	      --enable-libzimg
+	      # --enable-libvmaf
+        # --enable-libopenh264 \
 	      # --enable-libsrt \
         # --enable-avisynth \
 make -j$cpu_cnt
