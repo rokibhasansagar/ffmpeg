@@ -6,5 +6,5 @@ cd srt
 ./configure --enable-static
 make -j$cpu_cnt
 sudo make install
-make distclean
+# make distclean
 sudo ldconfig
