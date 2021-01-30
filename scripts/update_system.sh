@@ -77,7 +77,6 @@ sudo apt install \
 	libssh-dev \
 	libtheora-dev \
 	libtwolame-dev \
-	libvpx-dev \
 	libwavpack-dev \
 	libraw1394-11 \
 	librsvg2-2 \
@@ -159,11 +158,13 @@ sudo apt install \
 	gcc \
 	libogg-dev \
 	libxcb1-dev \
-	libx264-dev \
-	libx265-dev \
-	x265 \
 	libgpac-dev \
+	x265 \
 	libssl-dev -y
-sudo apt clean -y 
-sudo apt autoremove -y 
+	# compile from head, apt packages are very old 2+years
+	# libx264-dev \
+	# libvpx-dev \
+	# libx265-dev \
+sudo apt clean -y
+sudo apt autoremove -y
 echo "End of the system update"
