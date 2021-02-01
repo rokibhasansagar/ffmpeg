@@ -15,6 +15,8 @@ tar xjvf ffmpeg-*.tar.bz2
 rm ffmpeg-*.tar.bz2
 cd "$dirname" || exit
 
+        #--extra-cflags="-fPIC -m64 -I$HOME/ffmpeg_build/include" \
+        #--extra-cflags="-fPIC" \
 # FFMPEG Compilation
 ./configure \
         --pkg-config-flags="--static" \
@@ -65,6 +67,7 @@ cd "$dirname" || exit
         --enable-openssl \
       	--enable-pic \
 	      --enable-libzimg
+	      # --enable-shared \
 	      # --enable-libvmaf
         # --enable-libopenh264 \
 	      # --enable-libsrt \

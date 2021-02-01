@@ -26,13 +26,13 @@ sh $PWD/scripts/zimg.sh 2> $HOME/ffmpeg/logs/zimg.log
 # sh $PWD/scripts/libopus.sh 2> $HOME/ffmpeg/logs/libopus.log
 # sh $PWD/scripts/libtheora.sh 2> $HOME/ffmpeg/logs/libtheora.log
 # sh $PWD/scripts/libwebp.sh 2> $HOME/ffmpeg/logs/libwebp.log
-# sh $PWD/scripts/libvpx.sh 2> $HOME/ffmpeg/logs/libvpx.log
-#sh $PWD/scripts/libx264.sh 2> $HOME/ffmpeg/logs/libx264.log
+sh $PWD/scripts/libvpx.sh 2> $HOME/ffmpeg/logs/libvpx.log
+sh $PWD/scripts/libx264.sh 2> $HOME/ffmpeg/logs/libx264.log
 sh $PWD/scripts/libx265.sh 2> $HOME/ffmpeg/logs/libx265.log
 sh $PWD/scripts/vidstab.sh 2> $HOME/ffmpeg/logs/vidstab.log
 # sh $PWD/scripts/openh264.sh 2> $HOME/ffmpeg/logs/openh264.log
 # sh $PWD/scripts/libaom.sh 2> $HOME/ffmpeg/logs/libaom.log
-sh $PWD/scripts/libsrt.sh 2> $HOME/ffmpeg/logs/libsrt.log
+# sh $PWD/scripts/libsrt.sh 2> $HOME/ffmpeg/logs/libsrt.log
 # sh $PWD/scripts/vmaf.sh 2> $HOME/ffmpeg/logs/vmaf.log
 echo "All required libs had been installed"
 echo "Start compilation of ffmpeg"
