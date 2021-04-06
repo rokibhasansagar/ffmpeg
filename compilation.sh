@@ -17,7 +17,7 @@ echo "Update of the system had finished"
 echo "Start Compilation of the libs needed for ffmpeg..."
 # sh $PWD/scripts/nasm.sh 2> $HOME/ffmpeg/logs/nasm.log
 # sh $PWD/scripts/kvazaar.sh 2> $HOME/ffmpeg/logs/kvazaar.log
-# sh $PWD/scripts/libfdk-aac.sh 2> $HOME/ffmpeg/logs/libfdk-aac.log
+sh $PWD/scripts/libfdk-aac.sh 2> $HOME/ffmpeg/logs/libfdk-aac.log
 # sh $PWD/scripts/ogg.sh 2> $HOME/ffmpeg/logs/ogg.log
 sh $PWD/scripts/zimg.sh 2> $HOME/ffmpeg/logs/zimg.log
 # sh $PWD/scripts/libvorbis.sh 2> $HOME/ffmpeg/logs/libvorbis.log
