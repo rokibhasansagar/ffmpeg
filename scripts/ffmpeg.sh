@@ -22,7 +22,7 @@ cd "$dirname" || exit
         --pkg-config-flags="--static" \
         --extra-libs="-lpthread -lm -lz" \
         --toolchain=hardened \
-        --prefix="/opt/ffmpeg"
+        --prefix="/opt/ffmpeg" \
         --enable-gpl \
         --enable-nonfree \
         --enable-version3 \
