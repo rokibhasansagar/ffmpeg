@@ -20,12 +20,17 @@ cd "$dirname" || exit
 # FFMPEG Compilation
 ./configure \
         --pkg-config-flags="--static" \
-        --extra-libs="-lpthread -lm" \
+        --extra-libs="-lpthread -lm -lz" \
         --toolchain=hardened \
+        --prefix="/opt/ffmpeg"
         --enable-gpl \
         --enable-nonfree \
         --enable-version3 \
-        --disable-stripping \
+        --disable-debug \
+        --disable-doc \
+        --disable-htmlpages \
+        --disable-podpages \
+        --enable-stripping \
         --enable-libass \
         --enable-libfontconfig \
         --enable-libfreetype \
@@ -59,6 +64,7 @@ cd "$dirname" || exit
         --enable-libx264 \
         --enable-libx265 \
         --disable-ffplay \
+        --disable-ffprobe \
         --enable-libopenjpeg \
         --enable-libwebp \
         --enable-libxvid \
