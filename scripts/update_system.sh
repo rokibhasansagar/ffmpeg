@@ -1,14 +1,13 @@
 #!/bin/bash
 
 echo "Start the system update..."
-sudo apt update 
-sudo apt upgrade -y 
+sudo apt-get update -qy
+sudo apt-get upgrade -qy
 sudo apt dist-upgrade -y
-sudo apt install \
+sudo apt-get install -qy --no-install-recommends \
 	autoconf \
 	automake \
 	build-essential \
-	nasm \
 	fonts-dejavu-core \
 	fontconfig-config \
 	libtool \
@@ -165,6 +164,7 @@ sudo apt install \
 	# libx264-dev \
 	# libvpx-dev \
 	# libx265-dev \
-sudo apt clean -y
-sudo apt autoremove -y
+	# nasm \
+sudo apt clean -qy
+sudo apt autoremove -qy
 echo "End of the system update"

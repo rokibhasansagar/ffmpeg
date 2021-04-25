@@ -1,9 +1,8 @@
 #!/bin/bash
 
 cd $HOME/ffmpeg/downloads
-git clone https://github.com/videolan/x265.git
-cd x265/build/linux
-./make-Makefiles.bash
-make -j$cpu_cnt
-sudo make install 
+git clone https://bitbucket.org/multicoreware/x265_git.git -b Release_3.5
+cd x265_git/build/linux
+./multilib.sh
+sudo make -C 8bit install
 make clean

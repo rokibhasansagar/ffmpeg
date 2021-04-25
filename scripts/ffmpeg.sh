@@ -2,7 +2,7 @@
 
 
 # Download link for the latest ffmpeg version.
-url="http://ffmpeg.org/releases/ffmpeg-4.3.2.tar.bz2"
+url="http://ffmpeg.org/releases/ffmpeg-4.4.tar.bz2"
 # Finding out the name of the directory
 dirname=$(basename "$url" .tar.bz2)
 
